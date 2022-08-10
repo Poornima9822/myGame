@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mini Game</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="createBoxes();" class="main" onkeyup="keyCheck(event);">
+
+        <div class="backgroundBox" id="backgroundBox">
+
+            <p class="score" id="score">0</p>
+
+            <img src="Run (1).png" class="girl" id="girl" />
+
+        </div>
+
+        <div id="startGame" class="startGame">
+            <div>
+                <h3 class="header">Welcome to Mini Games</h3>
+                <p>
+                    Press Enter key to Start the Game <br/>
+                    Press Space Bar to Avoid Obstacles <br/>
+                    Press Backspace to Stop the Game
+                </p>
+            </div>
+        </div>
+        
+        <div id="endGame" class="endGame">
+            <h3 class="header">Game Over</h3>
+            <div>Your Score</div>
+            <div id="endScore">0</div>
+            <button onclick="reload();" class="btn">Try Again</button>
+        </div>
+
+        <div id="over" class="over">
+                <h3 class="header">Wanna Try Again</h3>
+                <button onclick="reload();" class="btn">Play Again</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
